@@ -87,6 +87,7 @@ This network origin policy is enforced **for security reasons** — to ensure pl
 ## 🔁 Return Value (Async, Never Throws)
 
 `.send()` is asynchronous and always resolves — it **never throws** exceptions.
+If you **don’t need** to confirm success, just call without `await`:
 
 ✔ Success response:
 
@@ -115,22 +116,6 @@ if (!success) {
   log("Notification failed:", error);
 }
 ```
-
----
-
-## ⚡ Non-Blocking Usage (Fire-and-Forget)
-
-If you **don’t need** to confirm success, just call without `await`:
-
-```js
-// Does not block strategy execution
-plugin.ntfy.send("alerts", "New signal!");
-```
-
-| Style      | Behavior               | Recommended for                 |
-| ---------- | ---------------------- | ------------------------------- |
-| `await`    | Waits for server reply | Debugging / confirmation needed |
-| No `await` | Continues immediately  | High-speed strategy loops ✔     |
 
 ---
 
