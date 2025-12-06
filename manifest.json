@@ -1,0 +1,18 @@
+{
+  "name": "ntfy",
+  "version": "1.0.0",
+  "repository": "https://gitlab.com/erdemozveren/thub-notify-ntfy",
+  "fullName": "NTFY Notifications",
+  "description": "Send notifications from your strategy with ntfy.sh",
+  "api": "1.0.0",
+  "namespace": "ntfy",
+  "type": "trader",
+  "permissions": {
+    "network": {
+      "origins": [
+        "https://ntfy.sh"
+      ]
+    }
+  },
+  "tags": "communication,message"
+}
