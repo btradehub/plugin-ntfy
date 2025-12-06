@@ -1,7 +1,7 @@
 {
   "name": "ntfy",
   "version": "1.0.0",
-  "repository": "https://gitlab.com/erdemozveren/thub-notify-ntfy",
+  "repository": "https://github.com/btradehub/plugin-ntfy",
   "fullName": "NTFY Notifications",
   "description": "Send notifications from your strategy with ntfy.sh",
   "api": "1.0.0",
